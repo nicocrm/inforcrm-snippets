@@ -1,0 +1,61 @@
+/* Custom branding for Mobile */
+/* Primary color: #EB6800 */
+/* Link color: #E37221 */
+
+/* toolbar bg */
+.toolbar,
+.viewContainer > .toolbar,
+body > .viewContainer > .toolbar,
+.viewContainer > .footer-toolbar {
+    background-color: #EB6800;
+}
+
+/* toolbar button */
+.viewContainer > .toolbar > .button,
+.toolbar > .button {
+    background-color: #EB6800;    
+}
+
+/* theme overrides */
+div.table-layout ,
+.related-item-count {
+	background-color: #EB6800;    
+}
+
+.related-item-label,
+.action-list > li > a > label,
+a,
+.href  {
+	color: #E37221;
+}
+
+.toggleStateOn {
+	background-color: #EB6800;
+	border-color: #EB6800;
+}
+
+/* login button */
+#login.login-active > .button {
+	background-color: #EB6800;
+}
+
+/* misc saleslogix UI stuff */
+.metric-widget > button ,
+.metric-list,
+.groups-notice,
+.card-layout .list-content > li.actions-row
+.card-layout .actions-row > button,
+.card-layout-search-expression,
+.chart-hash 
+{
+	background-color: #EB6800;    
+}
+
+/* Calendar (from Saleslogix theme) */
+.activities-for-day > .split-buttons > .button[data-tool="day"],
+.activities-for-month > .split-buttons > .button[data-tool="month"],
+.activities-for-year > .split-buttons > .button[data-tool="year"],
+.activities-for-week > .split-buttons > .button[data-tool="week"] ,
+#calendar_weeklist > div > h2.currentDate  {
+	background-color: #EB6800;    
+}

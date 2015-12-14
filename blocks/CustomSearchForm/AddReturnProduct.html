@@ -1,0 +1,73 @@
+<div class="AddReturnProduct">
+    <style>
+        .AddReturnProduct *
+        {
+            box-sizing: border-box;
+        }
+        .searchTypeGroup
+        {
+            padding: 5px;
+        }
+        .searchTypeGroup label
+        {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        .AddReturnProduct .col1
+        {
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+        .AddReturnProduct br
+        {
+            clear: both;
+        }
+        .AddReturnProduct .gridContainer
+        {
+            height: 20em;
+        }
+    </style>
+    <div class="searchTypeGroup">
+        Search Type:
+        <label>
+            <input type="radio" name="searchType" data-dojo-type="dijit.form.RadioButton" data-dojo-attach-point="optSalesHistory"
+                data-dojo-attach-event="onChange: showSearchType"
+                checked />
+            Sales History
+        </label>
+        <label>
+            <input type="radio" name="searchType" data-dojo-type="dijit.form.RadioButton" data-dojo-attach-point="optItemMaster"
+                data-dojo-attach-event="onChange: showSearchType"/>
+            Item Master
+        </label>
+    </div>
+    <div class="col1">
+        <label class="lbl">
+            Product Name:</label>
+        <div class="textcontrol">
+            <input type="text" data-dojo-type="dijit.form.TextBox" data-dojo-attach-point="txtFilterProduct"
+                data-dojo-attach-event="onChange: refreshGrid" />
+        </div>
+    </div>
+    <div class="col1">
+        <label class="lbl">
+            SKU:</label>
+        <div class="textcontrol">
+            <input type="text" data-dojo-type="dijit.form.TextBox" data-dojo-attach-point="txtFilterSku"
+                data-dojo-attach-event="onChange: refreshGrid" />
+        </div>
+    </div>
+    <div class="col1" data-dojo-attach-point="divFilterInvoiceNumber">
+        <label class="lbl">
+            Invoice Number:</label>
+        <div class="textcontrol">
+            <input type="text" data-dojo-type="dijit.form.TextBox" data-dojo-attach-point="txtFilterInvoiceNumber"
+                data-dojo-attach-event="onChange: refreshGrid" />
+        </div>
+    </div>
+    <br />
+    <div class="gridContainer" data-dojo-attach-point="gridContainer">
+        
+    </div>
+</div>

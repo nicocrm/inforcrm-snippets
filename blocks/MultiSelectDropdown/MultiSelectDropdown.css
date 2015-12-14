@@ -1,0 +1,47 @@
+div.multiselect 
+{
+    background-color: White;
+    border: 1px solid #A8A9BE;
+    text-align: left;
+    height: 180px;
+    z-index: 999;
+    padding: 2px;
+}
+div.multiselect div.checkboxList 
+{
+    overflow: auto;
+    top: 23px; /* space for filter panel */
+    bottom: 29px; /* space for button panel */
+    position: absolute;
+    width: 100%;
+}
+div.multiselect div.checkboxList th 
+{
+    font-weight: bold;
+}
+div.multiselect div.checkboxList td label
+{
+    /* the max-width is set from the JS code so that each column in the list gets proportional weight */
+    padding: 0 4px 0 4px;
+    display: block;
+    white-space: normal;
+}
+div.multiselect div.filter 
+{
+}
+div.multiselect div.filter .textcontrol {
+    width: 100%;
+}
+div.multiselect div.buttons 
+{
+    position: absolute;
+    bottom: 0px;
+    text-align: right;
+    padding: 0 7px 0 0;
+    width: 100%;
+}
+div.multiselect input[type=checkbox]
+{
+    width: auto !important;
+    float: none;
+}

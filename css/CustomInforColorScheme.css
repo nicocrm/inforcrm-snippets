@@ -1,0 +1,47 @@
+/* Custom style scheme for InforCRM */
+
+/* Using #EB6800 as primary color */
+/* Using #E37221 as link color */
+
+.dijitTab, 
+.dijitTab .dijitTabInnerDiv,
+.dijitTabListWrapper,
+#MainHeader,
+#titlePane,
+.tws .tws-main-tab-buttons,
+.tws-tab-button,
+.dijitTabController,
+#GroupLookupButton > .dijitButtonNode,
+.dijitTabPaneWrapper,
+.dijitDialogTitleBar
+ {
+    background-color: #EB6800 !important;
+}
+
+.dijitTab .dijitTabContent,
+#MainHeader,
+.dijitTab,
+.tws-tab-button,
+.tws .tws-main-tab-buttons li.tws-active-tab-button .tws-tab-button-middle,
+.tws .tws-main-tab-buttons li.tws-active-tab-button .tws-tab-button-middle:hover,
+.dijitTabListWrapper,
+.alarm-tab-selected
+{
+    border-color: #EB6800 !important;
+}
+
+a,
+.comboAsHyperlink input,
+.lookup .hyperLinked input,
+.alarm-tab-selected {
+    color: #E37221 !important;
+}
+
+li.tws-tab-button > a span
+ {
+    color: white !important;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
