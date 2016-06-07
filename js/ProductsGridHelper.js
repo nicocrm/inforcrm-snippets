@@ -11,12 +11,17 @@ define(['dojo/_base/declare', 'dojo/aspect'], function (declare, aspect) {
 
         // called from server side code, if the user is not allowed to edit the other columns in the grid
         setGridReadOnly: function() {
+            var grid = this.grid;
             var structure = grid.structure;
             var cells = structure[0].cells;
             for (var i = 0; i < cells.length; i++) {
                 var c = cells[i];
                 if (c.fieldName != 'Quantity')
                     c.editable = false;
+            }
+            if(grid.mode == 'insert') {
+                // if we don't do that, the grid will show duplicated rows
+                grid.store.clearCache();
             }
             grid.setStructure(structure);
         },
